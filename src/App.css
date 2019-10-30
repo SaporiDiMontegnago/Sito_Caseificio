@@ -1,0 +1,818 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #fdfcfb;
+}
+
+/******  Stili generali  ******/
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+#mobile_header,
+#mobile_header > * {
+  display: none;
+}
+
+#header {
+  width: 20%;
+  padding: 3% 0% 3% 2%;
+}
+
+.contenuto {
+  height: 100%;
+  width: 80%;
+  padding: 3% 2%;
+}
+
+.home {
+  width: 100%;
+}
+
+.foto {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  padding: 3px;
+}
+
+.foto_top {
+  height: 300px;
+}
+
+h1,
+h2,
+h3,
+h5,
+h6,
+label {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+h1 {
+  color: #6c442b;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 22px;
+  text-align: center;
+  position: relative;
+  top: -80%;
+  z-index: 1;
+}
+
+h2 {
+  color: #6c442b;
+  font-size: 22px;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+h3 {
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+  text-transform: none;
+  color: #6c442b;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.6em;
+  font-size: 16px;
+}
+
+h5 {
+  padding: 5px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+
+h6 {
+  padding: 0 20px 5px 20px;
+  font-weight: lighter;
+  font-size: 12px;
+  line-height: 2em;
+  text-transform: uppercase;
+}
+
+p {
+  padding: 2%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.3em;
+  text-align: justify;
+}
+
+span {
+  font-weight: bolder;
+}
+
+/******  Header  ******/
+
+#mobile_header,
+#mobile_header > * {
+  display: none;
+}
+
+#logo_header {
+  width: 92%;
+  text-align: center;
+}
+
+.headerBox {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #6c442b;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+nav a:hover {
+  background-color: #f5efea;
+}
+
+nav a:active {
+  background-color: #f5efea;
+}
+
+.socialIcon {
+  width: 40px;
+  margin: 10px;
+}
+
+/******  Footer  ******/
+
+#footer {
+  color: #6c442b;
+  background-color: #f5efea;
+  border-top: 1px dotted #6c442b;
+  padding: 15px 40px;
+}
+
+#logo_footer {
+  width: 12%;
+  margin: 10px 44%;
+}
+
+#footer #socials {
+  text-align: center;
+  margin: 0 5px;
+}
+
+#footer .socialIcon {
+  height: 25px;
+  width: 25px;
+}
+
+#footer #pagine {
+  display: flex;
+  justify-content: center;
+}
+
+#footer #pagine a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  padding: 0 10px;
+}
+
+#footer p {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px;
+}
+
+#footer .flex {
+  justify-content: space-between;
+}
+
+#footer #contacts_footer {
+  justify-content: center;
+}
+
+#footer #bottom p {
+  padding-top: 30px;
+  font-size: 13px;
+}
+
+#designer {
+  color: #6c442b;
+  text-decoration: underline;
+}
+
+/******  Home  ******/
+
+#logo_home {
+  position: absolute;
+  width: 20%;
+  left: 40%;
+  top: 50px;
+  z-index: 1;
+}
+
+#foto_home {
+  width: 100%;
+  padding: 90px 4% 50px 4%;
+}
+
+#pages {
+  padding: 1% 2%;
+}
+
+.front {
+  width: 33.33%;
+  padding: 0 2%;
+}
+
+#pages img {
+  width: 100%;
+  vertical-align: top;
+}
+
+/* scoll arrow */
+
+#scroll_button {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#scroll_button::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 80%;
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0.8) 80%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0.8) 80%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.demo a {
+  position: absolute;
+  top: 600px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font: normal 400 20px/1 "Josefin Sans", sans-serif;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+.demo a:hover {
+  opacity: 0.5;
+}
+
+#scroll_button a {
+  padding-top: 50px;
+}
+#scroll_button a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb05 1.5s infinite;
+  animation: sdb05 1.5s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+/******  Storia  ******/
+
+#missione {
+  background-color: white;
+  border: 1px dotted #6c442b;
+  text-align: center;
+  padding: 15px;
+  margin: 2%;
+}
+
+.column {
+  padding: 1.5%;
+  width: 50%;
+}
+
+.foto.flex {
+  width: 100%;
+  height: auto;
+  align-items: flex-start;
+}
+
+.foto_storia {
+  width: 50%;
+  height: auto;
+  padding: 3px;
+  align-items: flex-start;
+}
+
+.quote {
+  font-size: 17px;
+  color: #6c442b;
+  text-align: center;
+  font-weight: 400;
+  font-style: italic;
+}
+
+#missione p {
+  text-align: center;
+}
+
+/******  Prodotti  ******/
+
+#card {
+  width: 32%;
+  padding: 1%;
+  margin: 0.5% 0.5% 3% 0.5%;
+  background-color: white;
+}
+
+#foto_prodotto {
+  width: 100%;
+  padding: 5px;
+}
+
+#card h3 {
+  text-align: left;
+  padding: 2% 2% 0 2%;
+}
+
+#card h4 {
+  text-align: left;
+  padding: 0 2% 2% 2%;
+  font-size: 14px;
+}
+
+#card p {
+  text-align: left;
+}
+
+.descrizione {
+  padding-top: 10px;
+  height: 280px;
+  overflow: scroll;
+}
+
+.inglese {
+  height: 100px;
+  color: #6c442b;
+  font-style: italic;
+  display: none;
+}
+
+/******  Contatti  ******/
+
+table th {
+  font-weight: 300;
+  text-align: left;
+  width: 100px;
+}
+
+.fotoContatti {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+#mappa {
+  width: 100%;
+  height: 310px;
+  padding: 0 20px;
+  overflow: scroll;
+}
+
+.info {
+  line-height: 1.4;
+  letter-spacing: 1px;
+  padding: 20px 0px 0px 20px;
+}
+
+.third {
+  width: 48%;
+  overflow: scroll;
+}
+
+.map {
+  width: 52%;
+}
+
+.mercati {
+  padding: 0px 0px 0px 20px;
+}
+
+#form,
+#contatti {
+  vertical-align: top;
+  margin: 30px 0;
+  padding: 2%;
+}
+
+#form {
+  border: 10px solid white;
+}
+
+#contatti {
+  background-color: white;
+}
+
+#cit .citazione {
+  padding: 8% 8% 0 8%;
+}
+
+.form-input {
+  padding: 5px 0 15px 5px;
+  font-size: 14px;
+}
+
+input,
+textarea {
+  font-size: 18px;
+  width: 100%;
+  border: 1px solid #3f3f3f;
+  border-radius: 5px;
+  padding: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  width: 100px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  border: 1px solid #3f3f3f;
+  object-position: center;
+  line-height: 1.4;
+  margin-left: 5px;
+}
+
+/* MEDIA QUERIES */
+
+/* small screens */
+
+@media screen and (max-width: 1130px) {
+  #logo_home {
+    width: 24%;
+    left: 38%;
+  }
+
+  .socialIcon {
+    width: 35px;
+  }
+
+  h1,
+  nav a {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p,
+  h4 {
+    font-size: 15px;
+  }
+
+  h5,
+  label {
+    font-size: 13px;
+  }
+
+  h6 {
+    font-size: 11px;
+  }
+
+  #card {
+    width: 48%;
+    padding: 1%;
+    margin: 0.5% 0.5% 3% 0.5%;
+    background-color: white;
+  }
+}
+
+/* tablet */
+
+@media screen and (max-width: 940px) {
+  #scroll_button {
+    display: none;
+  }
+
+  #mobile_header > * {
+    display: block;
+  }
+
+  #mobile_header {
+    display: block;
+    width: 8%;
+  }
+
+  #burger-button {
+    background-color: #f5efea;
+  }
+
+  #header,
+  #header > * {
+    display: none;
+  }
+
+  .contenuto {
+    width: 90%;
+  }
+
+  .home {
+    width: 100%;
+  }
+
+  h1 {
+    top: -70%;
+  }
+
+  /* Position and sizing of burger button */
+  .bm-burger-button {
+    position: fixed;
+    width: 30px;
+    height: 25px;
+    left: 3%;
+    top: 4%;
+  }
+
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #6c442b;
+  }
+
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+    background: #6c442b;
+  }
+
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 30px;
+    width: 30px;
+  }
+
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #6c442b;
+  }
+
+  /* Sidebar wrapper styles */
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+  }
+
+  /* General sidebar styles */
+  .bm-menu {
+    background: #f5efea;
+    padding: 2em 1.5em 0;
+    font-size: 1.2em;
+    line-height: 2em;
+  }
+
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #6c442b;
+    padding: 0.8em;
+  }
+
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+    outline: none;
+    -webkit-appearance: none;
+  }
+
+  .bm-item:focus {
+    -webkit-appearance: none;
+  }
+
+  a.bm-item.menu-item.active {
+    color: #6c442b !important;
+    background-color: white;
+  }
+
+  #footer p {
+    font-size: 13px;
+  }
+}
+
+/* mobile */
+
+@media screen and (max-width: 650px) {
+  #logo_home {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 2%;
+  }
+
+  #foto_home {
+    object-fit: cover;
+    padding: 15% 2% 0% 2%;
+  }
+
+  .front {
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  #pages {
+    padding: 0;
+  }
+
+  #mobile_header {
+    width: 10%;
+  }
+
+  .contenuto {
+    width: 90%;
+  }
+
+  .home {
+    width: 100%;
+  }
+
+  /* Position and sizing of burger button */
+  .bm-burger-button {
+    position: fixed;
+    width: 25px;
+    height: 20px;
+    left: 3%;
+    top: 3%;
+  }
+
+  #card {
+    width: 98%;
+    padding: 2%;
+    margin: 1% 2% 3% 0;
+    background-color: white;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .info {
+    line-height: 1.4;
+    letter-spacing: 1px;
+    padding: 0;
+  }
+
+  .third {
+    width: 100%;
+  }
+
+  .map {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  h4,
+  p {
+    font-size: 13px;
+  }
+
+  h5 {
+    padding: 10px 0px 0 10px;
+    font-size: 12px;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  h6 {
+    letter-spacing: 0em;
+  }
+
+  .contenuto > .foto.flex .foto_storia {
+    width: 100%;
+    height: auto;
+  }
+
+  #footer {
+    padding: 10px 20px;
+    justify-content: center;
+  }
+
+  #logo_footer {
+    width: 40%;
+    margin: 5px 30%;
+  }
+
+  #footer #pagine {
+    width: 100%;
+    justify-content: space-around;
+    padding: 5px 0;
+  }
+
+  #footer #pagine a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    padding: 0 5px;
+  }
+
+  #footer p {
+    font-size: 12px;
+    font-weight: 300;
+    padding: 5px;
+  }
+
+  #dot {
+    display: none;
+  }
+
+  #bottom {
+    padding-top: 10px;
+    display: block;
+  }
+  #footer #bottom p {
+    padding-top: 5px;
+    font-size: 13px;
+    text-align: center;
+  }
+}
