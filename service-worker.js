@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Sito_Caseificio/precache-manifest.52013e9bab966d2987f6ea50a6d80153.js"
+  "/sito-caseificio/precache-manifest.885c48e3f9603ec80894e47a7cc3722a.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/Sito_Caseificio/index.html", {
+workbox.routing.registerNavigationRoute("/sito-caseificio/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
