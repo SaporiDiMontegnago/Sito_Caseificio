@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/sito-caseificio/static/js/runtime~main.d14ee4e4.js"
   },
   {
-    "revision": "0de1ea5d8b01d9e8efc1",
-    "url": "/sito-caseificio/static/js/main.fae96738.chunk.js"
+    "revision": "9621c14b341affde2800",
+    "url": "/sito-caseificio/static/js/main.be3c692d.chunk.js"
   },
   {
     "revision": "d80ba709f01fd49445ea",
     "url": "/sito-caseificio/static/js/2.c203eb2f.chunk.js"
   },
   {
-    "revision": "0de1ea5d8b01d9e8efc1",
+    "revision": "9621c14b341affde2800",
     "url": "/sito-caseificio/static/css/main.93674227.chunk.css"
   },
   {
-    "revision": "b565751ec99f3f9baa412732865fc932",
+    "revision": "1a197f5b0624bb4a29e03d2fc3cd540f",
     "url": "/sito-caseificio/index.html"
   }
 ];
