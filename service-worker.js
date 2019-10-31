@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/sito-caseificio/precache-manifest.6647222e19bd23a4e6d08c4a8010bcb0.js"
+  "/sito-caseificio/precache-manifest.4546a3824a5d884ec6b903c13f1d874a.js"
 );
 
 workbox.clientsClaim();
